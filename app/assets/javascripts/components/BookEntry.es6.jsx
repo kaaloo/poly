@@ -1,8 +1,3 @@
-var author = function() {
-  var id = this.props.book.user_id
-  return this.props.users.id === id
-}
-
 BookEntry = React.createClass ( {
   render: function() {
     return (

@@ -6,6 +6,8 @@ This README outlines the details of collaborating on this Rails/React applicatio
 
 Getting started? Start [here](#prerequisites)
 
+[Brief intro](https://youtu.be/TgTn8HlUVZo)
+
 ###Current Features
 * Compose translation dictionaries between two languages using text
 * Browse available dictionaries
@@ -34,7 +36,7 @@ Planned features for future releases. Releases are mapped below. We use [semanti
   - [ ] User photo
   - [ ] User books
   - [ ] Tag a book as Favorite
-- [ ] Handle error messages on login page
+- [x] Handle error messages on login page
 
 ###Version  0.3
 - [ ] Audio and video phrase interface
@@ -63,9 +65,17 @@ Together with speakers and signers of every langauge in the world, we're buildin
 Currently, there are around 7000 classified languages, with an unknowable number of unclassified languages.
 
 
-### Community
-Join us on our open [Slack](http://wikitongues-slack.herokuapp.com/) channel.
-  
+<!-- ### Community -->
+<!-- Join us on our open [Slack](http://wikitongues-slack.herokuapp.com/) channel. -->
+
+###Directory
+
+
+You can find the language database project repo at [https://github.com/wikitongues/language-api](https://github.com/wikitongues/language-api).
+
+You can find the [Oral Histories](https://youtube.com/wikitongues) project on [Youtube](https://youtube.com/wikitongues)
+
+
 
 ## Prerequisites
 You will need the following things properly installed on your computer.
@@ -78,7 +88,7 @@ You will need the following things properly installed on your computer.
 * Clone or fork this repository with `git clone https://github.com/wikitongues/poly.git`
 * Change into the new directory
 * Install all dependencies with `bundle install`
-* Create a Postgres database with `rake db:create`
+* Create a Postgres database with `rake db:setup`
 
 ## Running / Development
 * `rails s`
