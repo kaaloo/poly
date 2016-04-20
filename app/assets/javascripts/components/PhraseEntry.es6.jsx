@@ -1,7 +1,9 @@
 PhraseEntry = React.createClass ( {
   getInitialState: function(){
-    return {sourcePhrase: "",
-    targetPhrase: ""}
+    return {
+      sourcePhrase: "",
+      targetPhrase: ""
+    }
   },
 
   onSourcePhraseChange: function(e) {
@@ -19,7 +21,7 @@ PhraseEntry = React.createClass ( {
         sourcePhrase: "",
         targetPhrase: ""
       })
-    } 
+    }
   },
 
   onCancelEditPhrase: function(){
@@ -45,9 +47,9 @@ PhraseEntry = React.createClass ( {
               placeholder="Target"/>
             <button className="savePhrase" onClick={this.onPhraseSubmit}>Save</button>
             <button title="Cancel" onClick={this.onCancelEditPhrase} className="close icon"></button>
-          </div>  
+          </div>
       )
   }
-  
-  
+
+
 } )
