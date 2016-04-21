@@ -4,6 +4,7 @@ class BooksController < AuthenticatedController
   def show
     @users=User.all
     @book = Book.find(params[:id])
+    @favorites = Favorite.all
     if @book.present?
       @phrase_pairs = @book.phrase_pairs
       authorize @book

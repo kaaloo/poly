@@ -5,4 +5,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :books
+  has_many :favorites
+  has_many :favorite_books, through: :favorites, source: :favorited, source_type: 'Book'
 end

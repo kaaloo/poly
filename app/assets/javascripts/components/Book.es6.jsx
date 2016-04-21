@@ -155,6 +155,15 @@ Book = React.createClass( {
     }
   },
 
+  renderFavoriteButton: function() {
+    if (this.props.currentUser.favorite_books) {
+      // return( <a href={favorite_books_path(book_id: @book)} method=post>add to favorites</a>)
+    // } else {
+      // return( <a href={favorite_books_path(@book)} method=delete>add to favorites</a>)
+      console.log("hi")
+    }
+  },
+
   render: function() {
     return (
       <div className="container">
@@ -164,6 +173,7 @@ Book = React.createClass( {
             <div className="wrapper">
               { this.renderTitle() }
               { this.renderAuthor() }
+              { this.renderFavoriteButton() }
               { this.renderDescription() }
               { this.renderBookMenu() }
             </div>
