@@ -83,6 +83,7 @@ You will need the following things properly installed on your computer.
 * [Git](http://git-scm.com/)
 * Ruby 2.3.0 (check what version of ruby you have by running `ruby -v`)
 * Bundler (`gem install bundler`)
+* On Ubuntu, make sure you have libpq-dev installed using `sudo apt-get install libpq-dev`
 
 ## Installation
 * Clone or fork this repository with `git clone https://github.com/wikitongues/poly.git`
