@@ -11,6 +11,12 @@ Dictionary = React.createClass( {
     }
   },
 
+  componentWillReceiveProps: function(newProps) {
+    this.setState({
+      phrasePairs: newProps.initialPhrasePairs
+    })
+  },
+
   onAddNewPhraseButtonClick: function() {
     this.setState({
         isPhraseInputActive: !this.state.isPhraseInputActive
@@ -193,10 +199,8 @@ Dictionary = React.createClass( {
   render: function() {
     return (
        <div className="dictionary">
-        <section className="content-wrapper">
-          <ul className="content">{this.renderPhrasePairs()}</ul>
-          {this.renderCreateNewPhraseButton()}
-        </section>
+        <ul className="content">{this.renderPhrasePairs()}</ul>
+        {this.renderCreateNewPhraseButton()}
        </div>
     )
   }
